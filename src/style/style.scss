@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #333;
+}
+
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.copyright {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h1 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.BtnBox {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  a {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    &:hover {
+      letter-spacing: 0.25em;
+      background: var(--clr);
+      color: var(--clr);
+      box-shadow: 0 0 35px var(--clr);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      background: #27282c;
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+    i {
+      position: absolute;
+      inset: 0;
+      display: block;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -3.5px;
+        left: 80%;
+        width: 10px;
+        height: 5px;
+        border: 2px solid var(--clr);
+        background: #27282c;
+        transform: translateX(-50%);
+        transition: 0.5s;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3.5px;
+        left: 20%;
+        width: 10px;
+        height: 5px;
+        border: 2px solid var(--clr);
+        background: #27282c;
+        transform: translateX(-50%);
+        transition: 0.5s;
+      }
+    }
+    &:hover i::before {
+      width: 20px;
+      left: 20%;
+    }
+    &:hover i::after {
+      width: 20px;
+      left: 80%;
+    }
+  }
+}
