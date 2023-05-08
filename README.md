@@ -1,4 +1,4 @@
-<h1 align="center">Facebook layout</h1>
+<h1 align="center">AG Grid Data Table</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/npm-v9.5.1-blue" >
   <img src="https://img.shields.io/badge/vue-v3.2.37-green">
